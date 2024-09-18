@@ -1,0 +1,52 @@
+[
+  {
+    "from": "marketing@shopnow.com",
+    "subject": "Buy now and get 50% off!",
+    "body": "Hurry up! Click here to take advantage of this offer. Limited time only!"
+  },
+  {
+    "from": "newsletter@company.com",
+    "subject": "Weekly Update",
+    "body": "Here are the latest updates from our company. We are proud to announce our new product line."
+  },
+  {
+    "from": "winner@lottery.com",
+    "subject": "You are a WINNER!",
+    "body": "Congratulations! You have won a million dollars! Click here to claim your prize."
+  },
+  {
+    "from": "friend@personalmail.com",
+    "subject": "Let's catch up soon",
+    "body": "Hey, it's been a while since we last spoke. How about grabbing lunch next week?"
+  },
+  {
+    "from": "support@bank.com",
+    "subject": "Your account statement",
+    "body": "Dear customer, your monthly account statement is ready. Please review it in your online banking portal."
+  },
+  {
+    "from": "free@offerzone.com",
+    "subject": "Get your FREE gift today!",
+    "body": "Click here to receive your free gift! No purchase necessary."
+  },
+  {
+    "from": "projectmanager@company.com",
+    "subject": "Project Status Update",
+    "body": "The project is on track for completion by the end of the month. Let me know if you need any additional resources."
+  },
+  {
+    "from": "no-reply@notifications.com",
+    "subject": "Your subscription has been renewed",
+    "body": "Thank you for renewing your subscription. Your account has been updated."
+  },
+  {
+    "from": "spammer@shadybiz.com",
+    "subject": "Make thousands of dollars fast!",
+    "body": "Join our program and start making thousands of dollars quickly! Click here for more information."
+  },
+  {
+    "from": "team@open-source.org",
+    "subject": "Contribution Welcome",
+    "body": "We are happy to inform you that your contribution to our open-source project has been accepted."
+  }
+]
