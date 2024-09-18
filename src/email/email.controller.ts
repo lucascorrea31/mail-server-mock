@@ -10,6 +10,12 @@ export class EmailController {
 		return this.emailService.receiveEmail(email);
 	}
 
+	@Post("train")
+	trainBayesFilter(@Body() emails: { email: Email; isSpam: boolean }[]) {
+		this.emailService.trainBayesFilter(emails);
+		return "Bayesian filter trained successfully.";
+	}
+
 	@Get("all")
 	getAllEmails(): Email[] {
 		return this.emailService.getAllEmails();
