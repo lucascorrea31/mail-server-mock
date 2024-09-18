@@ -29,8 +29,14 @@ export class EmailService {
 				const parsedData = JSON.parse(data);
 				this.emails = parsedData;
 
-				this.emails.forEach((email) => {
-					this.bayesService.train([{ email, isSpam: email.isSpam }]);
+				parsedData.forEach((email: { content: Email; isSpam: boolean }) => {
+					this.bayesService.train([
+						{ email: email.content, isSpam: email.isSpam },
+					]);
+
+					if (!email.isSpam) {
+						this.emails.push(email.content);
+					}
 				});
 			}
 
