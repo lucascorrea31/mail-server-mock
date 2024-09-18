@@ -3,7 +3,7 @@
 Foi usado o framework NestJS para construir um backend robusto e consistente, provendo uma API simples e funcional para o desafio.
 Para persistência dos dados, foi usado arquivos JSON fazendo uma analogia/abstração ao NoSQL com o objetivo de simplificar a solução e facilitar a execução. Claramente reconheço não ser a melhor abordagem, mas assim foi feito apenas para viabilizar o projeto.
 
-##### Usuário
+#### Usuário
 Temos duas rotas de API para as preferências de usuário:
 - [GET] user/preferences/{id}
   Busca a preferência de usuário já salva anteriormente OU cria uma nova com o valor `"auto"` pré-definida.
@@ -20,12 +20,13 @@ Temos duas rotas de API para as preferências de usuário:
   Reponse:
   `{"id":"4","mode":"light"}`
 
-##### Email
+#### Email
 Temos três rotas de API para tratar os emails:
 - [GET] email/all
   Lista todos os emails válidos. Entendendo que os emails válidos são os que não são SPAM.
 
   Response:
+  ```
   [
     {
       "from": "newsletter@company.com",
@@ -33,6 +34,7 @@ Temos três rotas de API para tratar os emails:
       "body": "Here are the latest updates from our company. We are proud to announce our new product line."
     }
   ]
+  ```
 
 - [POST] email/receive
   Rota para o recebimento de um novo email. Ao receber a requisição, o email passará pela classificação utilizando o método Bayesiano para definir se é ou não SPAM. Se não for considerado SPAM, o email será salvo e adicionado à lista de emails.
